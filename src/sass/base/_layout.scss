@@ -98,3 +98,15 @@
     }
   }
 }
+
+.price {
+
+  &-value {
+    font-size: .875rem;
+
+    span {
+      margin-left: 5px;
+      font-size: 1.25rem;
+    }
+  }
+}

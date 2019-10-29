@@ -74,7 +74,7 @@ require_once('../views/sections/intro-page.php');
                                 <div class="basket-result">
                                     <span class="basket-result-text">Итог:</span> <span class="basket-result-value font-weight-bold">200</span> грн
                                 </div>
-                                <a href="#" class="btn btn-primary">
+                                <a href="page-checkout.php" class="btn btn-primary">
                                     Оформить заказ
                                 </a>
                             </div>

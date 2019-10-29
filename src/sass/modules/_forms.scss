@@ -1,15 +1,39 @@
+form {
+
+  .title {
+    font-size: 1.125rem;
+    font-family: $headings-font-family;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+}
+
 .form-group {
   position: relative;
-  padding: 10px 15px 15px;
-  margin-bottom: 15px;
-  border: 1px solid rgba($secondary, .4);
   transition: .5s;
 
-  label {
-    font-size: .625rem;
-    margin-bottom: 5px;
-    color: $light;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 2px;
+    border-radius: 2px;
+    background: $primary;
+    opacity: .7;
     transition: .5s;
+  }
+
+  label {
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+    margin-bottom: 0;
+    font-size: .875rem;
+    color: $body-color;
+    transition: .5s;
+    z-index: 5;
   }
 
   .form-control {
@@ -17,32 +41,22 @@
     background: transparent;
     border-radius: 0;
     border: none;
-    color: #fff;
-    font-size: .875rem;
+    color: $body-color;
+    font-size: 1rem;
     height: auto;
-
-    &::-webkit-input-placeholder {
-      color: $secondary;
-    }
-
-    &::-moz-placeholder {
-      color: $secondary;
-    }
-
-    &:-ms-input-placeholder {
-      color: $secondary;
-    }
-
-    &:-moz-placeholder {
-      color: $secondary;
-    }
   }
 
   &.in-focus {
-    border: 1px solid rgba($secondary, 1);
 
     label {
-      color: $primary;
+      bottom: 100%;
+      color: $secondary;
+      font-size: .75rem;
+    }
+
+    &::before {
+      width: 100%;
+      opacity: 1;
     }
   }
 }
@@ -80,15 +94,11 @@
 
   .form-group {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
   }
 
   &--min {
     max-width: 315px;
-  }
-
-  .btn {
-    width: 100%;
   }
 }
 
