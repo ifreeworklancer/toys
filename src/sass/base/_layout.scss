@@ -1,0 +1,100 @@
+.row {
+
+  &--small {
+    margin: 0 -.25rem;
+
+    .catalog-card-wrapper {
+      padding: 0 .25rem;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.pagination-list {
+  display: flex;
+  margin: 40px auto 0;
+
+  li {
+
+    a {
+      display: block;
+      margin: 0 3px;
+      padding: 5px 8px;
+      background: rgba(#fff, .6);
+      border: 1px solid rgba($dark, .6);
+      color: $light;
+      transition: .5s;
+      font-weight: bold;
+      border-radius: 3px;
+
+      &:hover {
+        color: $body-color;
+        background: rgba(#fff, 1);
+        border-color: rgba($dark, .8);
+      }
+    }
+
+    &.active {
+
+      a {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+
+  li {
+    margin-right: 15px;
+
+    a {
+
+      svg {
+        fill: $light;
+        transition: .5s;
+      }
+
+      &:hover {
+
+        svg {
+          fill: $primary;
+        }
+      }
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.contacts-list {
+  li {
+    margin-bottom: 15px;
+
+    a {
+      display: flex;
+      align-items: center;
+      color: $body-color;
+      font-weight: bold;
+      transition: .5s;
+
+      svg {
+        fill: $body-color;
+        margin-right: 10px;
+        transition: .5s;
+      }
+
+      &:hover {
+        color: $secondary;
+
+        svg {
+          fill: $secondary;
+        }
+      }
+    }
+  }
+}
