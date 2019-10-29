@@ -125,7 +125,7 @@ $page_basket = [
 ];
 
 $page_contacts = [
-  'title' => 'Контакты',
+    'title' => 'Контакты',
 ];
 
 $page_favorites = [
@@ -191,4 +191,47 @@ $page_checkout = [
             'old_price' => null,
         ],
     ],
+];
+
+$single_catalog = [
+    'title' => 'Детская чашка с собачкой',
+    'image' => '../../images/content/main/catalog/catalog-item-1.jpg',
+    'price' => '99',
+    'old_price' => '120',
+    'slider' => [
+        '../../images/content/main/catalog/catalog-item-1.jpg',
+        '../../images/content/main/catalog/catalog-item-2.jpg',
+        '../../images/content/main/catalog/catalog-item-3.jpg',
+    ],
+    'description' => '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At delectus deleniti error exercitationem, fuga laborum libero minus molestiae pariatur perspiciatis placeat possimus quis quo reiciendis ullam velit veniam. Exercitationem, ratione!</p>',
+    'feature' => [
+        [
+            'title' => 'Назначение',
+            'value' => 'для чая',
+        ],
+        [
+            'title' => 'Материал',
+            'value' => 'глина',
+        ],
+        [
+            'title' => 'Объем',
+            'value' => '300 мл',
+        ],
+        [
+            'title' => 'Высота',
+            'value' => '9,5 см',
+        ],
+        [
+            'title' => 'Глубина',
+            'value' => '8,5 см',
+        ],
+        [
+            'title' => 'Диаметр',
+            'value' => '9 см',
+        ],
+        [
+            'title' => 'Вес',
+            'value' => '260 гр',
+        ],
+    ]
 ];

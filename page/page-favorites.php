@@ -19,7 +19,7 @@ require_once('../views/sections/intro-page.php');
             <div class="row">
                 <?php foreach ($page_favorites['items'] as $item) : ?>
                     <div class="col-sm-6 col-lg-4 col-xl-3">
-                        <a href="../single/single-catalog.php" class="catalog-card">
+                        <a href="../single/single-product.php" class="catalog-card">
                             <div class="catalog-card-view">
                                 <figure style="background-image: url('<?= $item['image']; ?>');"></figure>
                             </div>

@@ -24,7 +24,7 @@
                 <div class="row row--small justify-content-center justify-content-lg-start">
                     <?php foreach ($catalog['items'] as $item) : ?>
                         <div class="col-md-6 col-lg-4 catalog-card-wrapper">
-                            <a href="../../single/single-catalog.php" class="catalog-card">
+                            <a href="../../single/single-product.php" class="catalog-card">
                                 <div class="catalog-card-view">
                                     <figure style="background-image: url('<?= $item['image']; ?>');"></figure>
                                 </div>

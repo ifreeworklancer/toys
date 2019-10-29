@@ -1,5 +1,6 @@
 import jquery from 'jquery';
 import Flickity from 'flickity';
+import 'flickity-as-nav-for';
 import ScrollReveal from 'scrollreveal';
 import IMask from 'imask';
 
@@ -143,7 +144,7 @@ window.jQuery = window.$ = jquery;
     /**
      * Sliders
      */
-    if ($('.intro-slider')) {
+    if ($('.intro-slider').length) {
 
         let elem1 = document.querySelector('.intro-slider');
         if (elem1) {
@@ -170,11 +171,11 @@ window.jQuery = window.$ = jquery;
         }
     }
 
-    if ($('.reviews-slider')) {
+    if ($('.reviews-slider').length) {
 
-        let elem1 = document.querySelector('.reviews-slider');
-        if (elem1) {
-            const flkty1 = new Flickity(elem1, {
+        let elem2 = document.querySelector('.reviews-slider');
+        if (elem2) {
+            const flkty2 = new Flickity(elem2, {
                 prevNextButtons: false,
                 contain: true,
                 draggable: true,
@@ -185,17 +186,51 @@ window.jQuery = window.$ = jquery;
             let prevArrowIntro = document.querySelector('.slider-arrow--reviews .slider-arrow-item--prev');
 
             prevArrowIntro.addEventListener('click', function () {
-                flkty1.previous(false, false);
+                flkty2.previous(false, false);
             });
 
             let nextArrowIntro = document.querySelector('.slider-arrow--reviews .slider-arrow-item--next');
 
             nextArrowIntro.addEventListener('click', function () {
-                flkty1.next(false, false);
+                flkty2.next(false, false);
             });
         }
     }
 
+    if ($('.product-slider').length) {
+        let elem3 = document.querySelector('.product-slider');
+        let galleryNavFor = document.querySelector('.product-slider-asNavFor');
+
+        let flkty3 = new Flickity(elem3, {
+            prevNextButtons: false,
+            cellAlign: 'left',
+            contain: true,
+            draggable: false,
+            pageDots: false,
+            wrapAround: false,
+        });
+
+        new Flickity(galleryNavFor, {
+            asNavFor: elem3,
+            cellAlign: 'left',
+            contain: true,
+            pageDots: false,
+            prevNextButtons: false,
+            wrapAround: false,
+        });
+
+        let prevArrowIntro = document.querySelector('.slider-arrow--product .slider-arrow-item--prev');
+
+        prevArrowIntro.addEventListener('click', function () {
+            flkty3.previous(false, false);
+        });
+
+        let nextArrowIntro = document.querySelector('.slider-arrow--product .slider-arrow-item--next');
+
+        nextArrowIntro.addEventListener('click', function () {
+            flkty3.next(false, false);
+        });
+    }
 
     /**
      * Animate scroll
