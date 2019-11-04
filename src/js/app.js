@@ -40,6 +40,14 @@ window.jQuery = window.$ = jquery;
     );
 
     /**
+     * Filters list
+     */
+    $('.filters li').on('click', function () {
+        $(this).toggleClass('active');
+        $(this).find('ul').slideToggle();
+    });
+
+    /**
      * Scroll
      */
     $(".scroll-link").on("click", function (event) {
@@ -90,7 +98,7 @@ window.jQuery = window.$ = jquery;
     let closeModal = $('.close-modal');
     let modalMask = $('.modal-mask');
 
-    $('.open-feedback').on('click', function (e) {
+    $('.add-feedback').on('click', function (e) {
         e.preventDefault();
         $(feedbackModal).addClass('active');
         $(modalMask).addClass('active');

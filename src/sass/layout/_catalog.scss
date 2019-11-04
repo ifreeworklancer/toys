@@ -6,27 +6,8 @@
   }
 }
 
-.filters {
-  background: #fff;
-  padding: 40px 30px;
-  border-radius: 3px;
-  box-shadow: 0 15px 60px -25px rgba(50, 51, 55, .25);
-  max-width: 300px;
-  margin: 0 auto 40px;
-
-  li {
-    margin-bottom: 15px;
-
-    a {
-      font-size: 1.125rem;
-      font-weight: bold;
-      color: $body-color;
-
-      &:hover {
-        color: $light;
-      }
-    }
-  }
+.catalog-card-wrapper {
+  margin-bottom: 30px;
 }
 
 .catalog-card {

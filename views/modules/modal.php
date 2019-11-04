@@ -9,31 +9,39 @@
         </h3>
     </div>
     <div class="custom-modal-body">
-<!--        <form action="../../mail-send.php" method="post">-->
-<!--            <div class="form-column">-->
-<!--                <div class="form-group">-->
-<!--                    <label for="user-name" class="label-placeholder">-->
-<!--                        Ваше имя-->
-<!--                    </label>-->
-<!--                    <input type="text" name="user_name" id="user-name" class="form-control">-->
-<!--                </div>-->
-<!--                <div class="form-group">-->
-<!--                    <label for="user-phone" class="label-placeholder">-->
-<!--                        Телеофн-->
-<!--                    </label>-->
-<!--                    <input type="tel" name="user_phone" id="user-phone" class="form-control">-->
-<!--                </div>-->
-<!--                <div class="form-group">-->
-<!--                    <label for="user-email" class="label-placeholder">-->
-<!--                        Email-->
-<!--                    </label>-->
-<!--                    <input type="email" name="user_email" id="user-email" class="form-control">-->
-<!--                </div>-->
-<!--                <button class="btn btn-primary">-->
-<!--                    Отправить-->
-<!--                </button>-->
-<!--            </div>-->
-<!--        </form>-->
+        <ul class="contacts-list">
+            <li>
+                <a href="tel:<?= phone_link($phone) ?>">
+                    <svg width="15" height="15">
+                        <use xlink:href="#phone-icon"></use>
+                    </svg>
+                    <?= $phone; ?>
+                </a>
+            </li>
+        </ul>
+        <ul class="social-list">
+            <li>
+                <a href="<?= $instagram; ?>">
+                    <svg width="20" height="20">
+                        <use xlink:href="#instagram-icon"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="<?= $viber; ?>">
+                    <svg width="20" height="20">
+                        <use xlink:href="#viber-icon"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="<?= $telegram; ?>">
+                    <svg width="20" height="20">
+                        <use xlink:href="#telegram-icon"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
     </div>
 </div>
 

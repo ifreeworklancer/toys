@@ -92,7 +92,6 @@
           transition: .5s;
 
           @media (min-width: map_get($grid-breakpoints, md)) {
-            right: -90px;
             bottom: 20px;
             width: 40px;
             height: auto;
@@ -124,12 +123,6 @@
 
           &:hover {
             opacity: 1;
-          }
-        }
-
-        &:hover {
-          .delete-basket-item {
-            right: 0;
           }
         }
       }

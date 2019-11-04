@@ -5,8 +5,8 @@
   padding: 30px 15px;
   width: 95%;
   max-width: 400px;
-  background: radial-gradient(385.50px at 1.21% 4.56%, #1B1B1B 0%, #090909 100%);
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  background: $body-bg;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   z-index: 500;
   transition: .5s;
   opacity: 0;
@@ -44,7 +44,7 @@
       left: 50%;
       width: 20px;
       height: 1px;
-      background: #fff;
+      background: $dark;
       opacity: .7;
 
       &--left {
@@ -61,6 +61,28 @@
 
     .title {
       margin-bottom: 20px;
+    }
+  }
+
+  &-body {
+
+    .social-list {
+
+      li {
+
+        a {
+          svg {
+            fill: $body-color;
+          }
+
+          &:hover {
+
+            svg {
+              fill: $primary;
+            }
+          }
+        }
+      }
     }
   }
 }
